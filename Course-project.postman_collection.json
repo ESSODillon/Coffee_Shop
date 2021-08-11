@@ -1,0 +1,529 @@
+{
+	"info": {
+		"_postman_id": "d937c809-9a49-4e4c-a3e9-66b6aed936d7",
+		"name": "Course-project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Brands",
+			"item": [
+				{
+					"name": "List All Brands",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Course-project/public/api/v1/brands",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Course-project",
+								"public",
+								"api",
+								"v1",
+								"brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View a Brand",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Course-project/public/api/v1/brands/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Course-project",
+								"public",
+								"api",
+								"v1",
+								"brands",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View coffees of a brand",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Course-project/public/api/v1/brands/1/coffee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Course-project",
+								"public",
+								"api",
+								"v1",
+								"brands",
+								"1",
+								"coffee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Coffee",
+			"item": [
+				{
+					"name": "List All Coffees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Course-project/public/api/v1/coffee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Course-project",
+								"public",
+								"api",
+								"v1",
+								"coffee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List All Coffees with sorting",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Course-project/public/api/v1/coffee?sort=[name:asc]&offset=1&limit=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Course-project",
+								"public",
+								"api",
+								"v1",
+								"coffee"
+							],
+							"query": [
+								{
+									"key": "sort",
+									"value": "[name:asc]"
+								},
+								{
+									"key": "offset",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View a Coffee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Course-project/public/api/v1/coffee/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Course-project",
+								"public",
+								"api",
+								"v1",
+								"coffee",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Snacks",
+			"item": [
+				{
+					"name": "List All Snacks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Course-project/public/api/v1/snacks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Course-project",
+								"public",
+								"api",
+								"v1",
+								"snacks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search snacks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Course-project/public/api/v1/snacks?q=short",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Course-project",
+								"public",
+								"api",
+								"v1",
+								"snacks"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "short"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View a Snack",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Course-project/public/api/v1/snacks/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Course-project",
+								"public",
+								"api",
+								"v1",
+								"snacks",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Toppings",
+			"item": [
+				{
+					"name": "List All Toppings",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "username:password",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost/Course-project/public/api/v1/toppings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Course-project",
+								"public",
+								"api",
+								"v1",
+								"toppings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View a Topping",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/Course-project/public/api/v1/toppings/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Course-project",
+								"public",
+								"api",
+								"v1",
+								"toppings",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a topping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"An Expensive Topping\",\n    \"price\": 222.23\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/Course-project/public/api/v1/toppings/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Course-project",
+								"public",
+								"api",
+								"v1",
+								"toppings",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Topping",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"An Expensive Topping\",\n    \"price\": 222.23\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/Course-project/public/api/v1/toppings/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Course-project",
+								"public",
+								"api",
+								"v1",
+								"toppings",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a topping",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"toasty chips\",\n    \"price\": 3.75\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/Course-project/public/api/v1/toppings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Course-project",
+								"public",
+								"api",
+								"v1",
+								"toppings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Create a user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"abc@email.com\",\n    \"name\": \"Bert Reynolds\",\n    \"username\": \"username\",\n    \"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/Course-project/public/api/v1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Course-project",
+								"public",
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login and get a token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"username\",\n    \"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/Course-project/public/api/v1/users/authBearer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Course-project",
+								"public",
+								"api",
+								"v1",
+								"users",
+								"authBearer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login and get a JWT token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"username\",\n    \"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/Course-project/public/api/v1/users/authJWT",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Course-project",
+								"public",
+								"api",
+								"v1",
+								"users",
+								"authJWT"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjb2ZmZWUtYXBpLmNvbSIsImV4cCI6MTYyNzQzMTA5NywiaXNhIjoxNjI3NDI3NDk3LCJkYXRhIjp7InVpZCI6MSwibmFtZSI6IkJlcnQgUmV5bm9sZHMiLCJlbWFpbCI6ImFiY0BlbWFpbC5jb20iLCJyb2xlIjoyfX0.V3k7C3LagBKKbfbaGycRPMgEMx9RFy-DuCrv0subaLI",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

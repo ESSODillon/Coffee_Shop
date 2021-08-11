@@ -1,0 +1,117 @@
+/*
+* Style for page specific content
+*/
+.main-heading {
+  color: #22252c;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 10px 0px;
+}
+
+.sub-heading {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  background-color: #f8f9fa;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+
+.section-content {
+  padding: 20px 0px;
+}
+
+.section-content .container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+}
+
+.list-key {
+  color: dodgerblue;
+  cursor:pointer;
+}
+
+.list-key:hover{
+  text-decoration: underline;
+}
+
+.object-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+.object-row > div {
+  padding: 0 16px;
+}
+
+.object-row-header {
+  background-color: #ededed;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.col-25 {
+  width: 25%;
+}
+
+.col-12-5 {
+  width: 12.5%;
+}
+
+.tal-r {
+  text-align: right;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.object-details th, .object-details td {
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
+.tt-c {
+  text-transform: capitalize;
+}
+
+.content-row, .object-row {
+  margin-top: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid #ededed;
+}
+
+.coffee-pagination a {
+  padding: 4px;
+  color:dodgerblue;
+  cursor: pointer;
+  border: 1px solid lightgrey;
+  margin: 0 4px;
+  border-radius: 1px;
+}
+
+.coffee-pagination a:hover{
+  text-decoration: underline;
+}
+
+
+.content-row-header {
+  background-color: #ededed;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.content-row {
+  width: 100%;
+  min-height: 32px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.content-row-odd {
+  background-color: #f8f9fa;
+}
